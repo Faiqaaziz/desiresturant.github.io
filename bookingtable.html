@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>FreshMenu</h1>
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="customerreviews.html">Reviews</a></li>
+            <li><a href="bookingtable.html">Booking Table</a></li>
+            <li><a href="login.html">Login</a></li>
+            <i class="fa-solid fa-bars"></i>
+        </ul>
+    </nav>
+    <div class="head">
+        <h1>Booking Table</h1>
+        </div>
+        <div id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name"><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date"><br>
+            <label for="time">Time:</label>
+            <input type="time" id="time"><br>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" min="1" max="10" value="1"><br>
+            <button onclick="bookTable()">Book Table</button>
+        </div>
+        <div id="confirmation"></div>
+        <script src="index.js"></script>
+</body>
+</html>
